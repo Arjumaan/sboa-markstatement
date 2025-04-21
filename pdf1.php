@@ -1,0 +1,139 @@
+<html>
+    <head>
+        <style>
+        :root {
+        --arrow-bg: rgba(255, 255, 255, 0.3);
+        --arrow-icon: url(https://upload.wikimedia.org/wikipedia/commons/9/9d/Caret_down_font_awesome_whitevariation.svg);
+        --option-bg: white;
+        --select-bg: rgba(255, 255, 255, 0.2);
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        place-items: center;
+
+      }
+      /* <select> styles */
+      select {
+        /* Reset */
+        appearance: none;
+        border: 0;
+        outline: 0;
+        font: inherit;
+        /* Personalize */
+        width: 20rem;
+        padding: 1rem 4rem 1rem 1rem;
+        background: var(--arrow-icon) no-repeat right 0.8em center / 1.4em,
+          linear-gradient(to left, var(--arrow-bg) 3em, var(--select-bg) 3em);
+        color: black;
+        border-radius: 0.25em;
+        box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+        /* Remove IE arrow */
+        &::-ms-expand {
+          display: none;
+        }
+        /* Remove focus outline */
+        &:focus {
+          outline: none;
+        }
+        /* <option> colors */
+        option {
+          color: inherit;
+          background-color: var(--option-bg);
+        }
+      }
+      #login_button{
+          position: relative;
+          width: 300px;
+          height: 40px;
+          transition: 1s;
+          margin-top: 70px;
+      }
+      #login_button {
+        font-size: 15px;
+        color: black;
+        letter-spacing: 1px;
+          width: 20%;
+          height: 5%;
+          text-decoration: none;
+          z-index: 10;
+          cursor: pointer;
+          font-size: 22px;
+          letter-spacing: 2px;
+          border: 1px solid #00ccff;
+          border-radius: 50px;
+          background-color:#87CEEB;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
+
+        </style>
+    </head>
+    <body align="center" background="bc5.png">
+        <div class="img">
+            <img src="sboa logo.png" height=150 width=80% alt="SBOA MAT HR SEC SCHOOL CBE-39">
+          </div>
+          <h1><B> Select Your Class and Section to Make PDF </h1></b>
+    <form method="post" action="newsamp1.php">
+        <h3><b>Class:</b>
+          <select name="studclass">
+             <option value="1">1</option>
+             <option value="2">2</option>
+             <option value="3">3</option>
+             <option value="4">4</option>
+             <option value="5">5</option>
+             <option value="6">6</option>
+             <option value="7">7</option>
+             <option value="8">8</option>
+             <option value="9">9</option>
+             <option value="10">10</option>
+          </select></h3>
+          <h3><b>Section:</b>
+             <select name="studsec">
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                <option value="E">E</option>
+                <option value="F">F</option>
+              </select></h3>
+              <h3><b>Examination:</b>
+                 <select name="studexam">
+                   <option value="CYCLE TEST1">CYCLE TEST1</option>
+                   <option value="CYCLE TEST2">CYCLE TEST2</option>
+                   <option value="CYCLE TEST3">CYCLE TEST3</option>
+                   <option value="MID TERM1">MID TERM1</option>
+                   <option value="MID TERM2">MID TERM2</option>
+                   <option value="PRE-QUARTERLY">PRE-QUARTERLY</option>
+                   <option value="QUARTERLY">QUARTERLY</option>
+                   <option value="PRE-HALFYEARLY">PRE-HALFYEARLY</option>
+                   <option value="HALF-YEARLY">HALF-YEARLY</option>
+                   <option value="REVISION 1">REVISION 1</option>
+                   <option value="REVISION 2">REVISION 2</option>
+                   <option value="REVISION 3">REVISION 3</option>
+                   <option value="ANNUAL EXAM">ANNUAL EXAM</option>
+                </select></h3>
+                <h3><b>Year:</b>
+                   <select name="studyear">
+                      <option value="2020-2021"> 2020 - 2021 </option>
+                      <option value="2021-2022"> 2021 - 2022 </option>
+                      <option value="2022-2023"> 2022 - 2023 </option>
+                      <option value="2023-2024"> 2023 - 2024 </option>
+                      <option value="2024-2025"> 2024 - 2025 </option>
+                      <option value="2025-2026"> 2025 - 2026 </option>
+                      <option value="2026-2027"> 2026 - 2027 </option>
+                      <option value="2027-2028"> 2027 - 2028 </option>
+                      <option value="2028-2029"> 2028 - 2029 </option>
+                      <option value="2029-2030"> 2029 - 2030 </option>
+                  </select></h3>
+          <center>
+            <div >
+               <input type="Submit" id="login_button" name="btn-login">
+            </div>
+          </center>
+        </form>
+    </body>
+</html>

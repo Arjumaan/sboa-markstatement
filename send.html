@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title> Student Enrollment Form </title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    body{
+      font-family: Calibri, Helvetica, sans-serif;
+      background-color: black;
+    }
+    .img {
+      align: top;
+      height: 150;
+      width: 100%;
+    }
+    .container {
+        padding: 50px;
+      background-color: #E55451;
+    }
+
+    input[type=text], input[type=password], textarea {
+      width: 100%;
+      padding: 15px;
+      margin: 5px 0 22px 0;
+      display: inline-block;
+      border: none;
+      background: #f1f1f1;
+    }
+    input[type=text]:focus, input[type=password]:focus {
+      background-color: #4CC417;
+      outline: none;
+    }
+     div {
+                padding: 10px 0;
+             }
+    hr {
+      border: 1px solid #f1f1f1;
+      margin-bottom: 25px;
+    }
+
+    :root {
+    --arrow-bg: rgba(255, 255, 255, 0.3);
+    --arrow-icon: url(https://upload.wikimedia.org/wikipedia/commons/9/9d/Caret_down_font_awesome_whitevariation.svg);
+    --option-bg: white;
+    --select-bg: rgba(255, 255, 255, 0.2);
+  }
+  * {
+    box-sizing: border-box;
+  }
+  /* <select> styles */
+  select {
+    /* Reset */
+    appearance: none;
+    border: 0;
+    outline: 0;
+    font: inherit;
+    /* Personalize */
+    width: 20rem;
+    padding: 1rem 4rem 1rem 1rem;
+    background: var(--arrow-icon) no-repeat right 0.8em center / 1.4em,
+      linear-gradient(to left, var(--arrow-bg) 3em, var(--select-bg) 3em);
+    color: black;
+    border-radius: 0.25em;
+    box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    /* Remove IE arrow */
+    &::-ms-expand {
+      display: none;
+    }
+    /* Remove focus outline */
+    &:focus {
+      outline: none;
+    }
+    /* <option> colors */
+    option {
+      color: inherit;
+      background-color: var(--option-bg);
+    }
+  }
+
+    .registerbtn {
+      background-color: #4CAF50;
+      color: white;
+      padding: 16px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      opacity: 0.9;
+    }
+    .registerbtn:hover {
+      opacity: 1;
+    }
+    .clearbtn {
+      background-color: #FF0000;
+      color: white;
+      padding: 16px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      opacity: 0.9;
+    }
+    .clearbtn:hover {
+      opacity: 1;
+    }
+    </style>
+  </head>
+  <body>
+
+    <img src="sboa logo.png" height=150 width=100% alt="SBOA MAT HR SEC SCHOOL CBE-39">
+    <form method="post" action="receive.php">
+     <div class="container">
+     <center> <h1> Student Enrollment Form for Examination </h1> </center>
+     <hr>
+      <label> Name: </label>
+       <input type="text" name="name" placeholder= "Name" size="25" required />
+      <label> Admission No: </label>
+       <input type="text" name="adno" placeholder="Admission Number" size="10" required />
+      <label> Class: </label>
+       <input type="text" name="class" placeholder="Class" size="10"required />
+      <label> Section: </label>
+       <input type="text" name="sec" placeholder="Section" size="10"required />
+      <label> Roll Number: </label>
+       <input type="text" name="rollno" placeholder= "Roll Number" size="10" required />
+        <input type="submit" class="registerbtn">
+        <input type="reset" class="clearbtn">
+    </form>
+  </body>
+</html>

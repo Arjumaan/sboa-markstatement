@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+     <title> SBOA Home Page </title>
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="glowstyle.css">
+     <style>
+
+     .background_img {
+       background-image: url('ill.gif');
+       background-size: cover;
+       width: 100%;
+       height: 100%;
+       position: relative;
+     }
+/* to contain the data */
+     .container {
+         position: center;
+         width: 80%;
+         padding: 20px;
+         border: 1px solid #ccc;
+         /*background: url(bc5.png);*/
+         border-radius: 10px;
+         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+         text-align: center;
+         align-self: center;
+     }
+
+/* this is to decorate the searchbox*/
+     .searchbox {
+     float: top;
+     }
+     input[type=search] {
+     min-width:420px;
+     padding: 10px;
+     margin-top: 15px;
+     font-size: 17px;
+     border: none;
+     }
+     .searchbox button {
+
+     padding: 8px;
+     margin-top: 10px;
+     margin-left: 10px;
+     background: orange;
+     font-size: 20px;
+     border: none;
+     cursor: pointer;
+     }
+     .searchbox button:hover {
+     background: blue;
+     }
+
+/* this is to decorate the dropdown box*/
+     ul {
+       align-items: stretch;
+       list-style-type: none;
+       margin: 0;
+       padding: 10;
+       overflow: hidden;
+       background-color: #00BFFF;
+     }
+
+     li {
+       float: left;
+       align-content: center;
+     }
+
+     li a, .dropbtn {
+       display: inline-block;
+       font-weight: bold;
+       color: white;
+       text-align: center;
+       padding: 20px 26px;
+       text-decoration: none;
+     }
+
+     li a:hover, .dropdown:hover .dropbtn {
+       background-color: red;
+     }
+
+     li.dropdown {
+       display: inline-block;
+     }
+
+     .dropdown-content {
+       display: none;
+       position: absolute;
+       background-color: #f9f9f9;
+       min-width: 250px;
+       box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+       z-index: 1;
+     }
+
+     .dropdown-content a {
+       color: black;
+       padding: 12px 16px;
+       text-decoration: none;
+       display: block;
+       text-align: left;
+     }
+
+     .dropdown-content a:hover {background-color: #f1f1f1;}
+
+     .dropdown:hover .dropdown-content {
+       display: block;
+     }
+     /*  This is to decorate the session box*/
+            .sessionbox {
+                display: block;
+                text-align: center;
+                box-sizing: content-box;
+                font-size: 18px;
+                padding: 20px 20px;
+                background-color: #00BFFF;
+                color: #fff;
+                border: none;
+                border-radius: 5px;
+                text-decoration: none;
+                transition: background-color 0.3s;
+                align-items: center;
+                align-self: center;
+                align-content: center;
+            }
+
+            .sessionbox:hover {
+                background-color:  red;
+              }
+     </style>
+  </head>
+  <body align="center" class="background_img">
+
+ <center>
+   <img src="sboa logo.png" height=200 width=100% alt="SBOA MAT HR SEC SCHOOL CBE-39"> <br><br><br>
+
+    <div class="container">
+
+     <h2 style="color:white; padding:0px; text-align:center;"> Welcome to Home Page of <u> SBOA MAT HR SEC SCHOOL CBE-39</h2></u>
+     <h1 style="color:white; text-align:center; font-size:20;">  Select where you want to Go......</h1>
+
+     <a class="sessionbox" href="send.html"> STUDENTS DATA ENTRY FOR 1st-10th</a>
+     <br>
+     <a class="sessionbox" href="sendme.html"> STUDENTS DATA ENTRY FOR 11th & 12th</a>
+     <br>
+     <a class="sessionbox" href="cls&sec1.html"> MARKLIST OF 1st-10th</a>
+     <br>
+     <a class="sessionbox" href="cls&sec.html"> MARKLIST OF 11th & 12th</a>
+     <br>
+     <a class="sessionbox" href="pdf1.php">GENERATE PDF 1st - 10th std</a>
+     <br>
+     <a class="sessionbox" href="pdf.php">GENERATE PDF 11th & 12th std</a>
+     <br>
+     <a class="sessionbox" href="login.html">LOGOUT HERE</a> <br><br>
+   </div>
+ </center>
+<footer>
+     <p style="color:white;
+               padding:40px;
+               margin:0;
+               text-align:center;
+               font-size:25px;"><b> Copyright &copy; 2023; Developed by M.Arjumaan of Class IIX - D </b></p>
+</footer>
+  </body>
+</html>

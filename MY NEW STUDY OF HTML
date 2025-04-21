@@ -1,0 +1,1149 @@
+________________________________________________________________________________
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Mark Enrollment Form </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    body{
+      font-family: Calibri, Helvetica, sans-serif;
+      background-color: pink;
+    }
+    .container {
+        padding: 50px;
+      background-color: lightblue;
+    }
+
+    input[type=text], input[type=password], textarea {
+      width: 100%;
+      padding: 15px;
+      margin: 5px 0 22px 0;
+      display: inline-block;
+      border: none;
+      background: #f1f1f1;
+    }
+    input[type=text]:focus, input[type=password]:focus {
+      background-color: orange;
+      outline: none;
+    }
+     div {
+                padding: 10px 0;
+             }
+    hr {
+      border: 1px solid #f1f1f1;
+      margin-bottom: 25px;
+    }
+    .registerbtn {
+      background-color: #4CAF50;
+      color: white;
+      padding: 16px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      opacity: 0.9;
+    }
+    .registerbtn:hover {
+      opacity: 1;
+    }
+    .clearbtn {
+      background-color: #FF0000;
+      color: white;
+      padding: 16px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      opacity: 0.9;
+    }
+    .clearbtn:hover {
+      opacity: 1;
+    }
+    </style>
+    <script language="javascript" type="text/javascript">
+    </script>
+  </head>
+  <body>
+    <center> <h1> SBOA MAT. HR. SEC. SCHOOL CBE-39 </h1> </center>
+    <form method="post" action="receiveme.php">
+     <div class="container">
+     <center> <h3> Mark Enrollment Form for Examination </h3> </center>
+     <hr>
+      <label> Name: </label>
+       <input type="text" name="i.name" placeholder= "Name" size="25" required />
+      <label> Admission No: </label>
+       <input type="text" name="i.adno" placeholder="Admission Number" size="10" required />
+      <label> Class & Section: </label>
+       <input type="text" name="i.class" placeholder="Class & Section" size="10"required />
+      <div>
+      <label>
+      Course :
+      </label>
+
+      <select>
+      <option value="Course">Course</option>
+      <option value="BCA">BCA</option>
+      <option value="BBA">BBA</option>
+      <option value="B.Tech">B.Tech</option>
+      <option value="MBA">MBA</option>
+      <option value="MCA">MCA</option>
+      <option value="M.Tech">M.Tech</option>
+      </select>
+      </div>
+      <div>
+      <label>
+      Gender :
+      </label><br>
+      <input type="radio" value="Male" name="gender" checked > Male
+      <input type="radio" value="Female" name="gender" checked > Female
+      <input type="radio" value="Other" name="gender" checked > Other
+
+      </div>
+      <label>
+      Phone :
+      </label>
+      <input type="text" name="country code" placeholder="Country Code"  value="+91" size="2"/>
+      <input type="text" name="phone" placeholder="phone no." size="10"/ required>
+      Current Address :
+      <textarea cols="80" rows="5" placeholder="Current Address" value="address" required> </textarea>
+       <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" required>
+       <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+
+       <label for="psw-repeat"><b>Re-type Password</b></label>
+        <input type="password" placeholder="Retype Password" name="psw-repeat" required>
+      <button type="submit" class="registerbtn">Register</button>
+      <button type="clear" class="clearbtn">Clear</button>
+    </form>
+  </body>
+</html>
+________________________________________________________________________________
+THIS CODE IS FOE CALLING A FUNCTION.......!
+<!Doctype Html>
+<Html>
+<Head>
+<Title>
+Call a JavaScript function
+</Title>
+<script type = "text/javascript">
+         function msgprint() {
+            alert("You are Successfully Called the JavaScript function");
+         }
+</script>
+</Head>
+<Body>
+<p>Click on the following button for calling the function: </p>
+      <form>
+         <input type = "button" onclick = "msgprint()" value = "Message Print">
+      </form>
+      <p>
+</Body>
+</Html>
+________________________________________________________________________________
+THIS CODE IS FOR MARQUEE.......!
+<marquee direction="right" behavior="alternate" style="background:blue;border:RED 3px SOLID" >
+You are at JavaTpoint Site!!!.....
+</marquee>
+________________________________________________________________________________
+THIS IS OF NAVIGATION BAR MAKE IT ON YOUR OWN.....!
+<nav>
+<ul>
+<li>
+<a href="#"> Home </a>
+</li>
+<li>
+<a href="#"> About </a>
+</li>
+<li>
+<a href="#"> Contact </a>
+</li>
+<li> <a href="#"> Terms of use </a>
+</li>
+<li>
+<a href="#"> Join Us </a>
+</li>
+</ul>
+</nav>
+________________________________________________________________________________
+THIS IS TO MAKE THE LOGO OF SOCIAL MEDIA IN THE WEBPAGE MAKE IT FOR YOUR OWN USE........!
+<!Doctype Html>
+<Html>
+<Head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<Title>
+Add the icons of social media
+</Title>
+<style>
+.fa {
+  padding: 20px;
+text-align: center;
+  margin: 5px 2px;
+  font-size: 30px;
+  width: 50px;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+.fa-snapchat-ghost {
+  background: #fffc00;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.fa-skype {
+  background: #00aff0;
+  color: white;
+}
+.fa:hover {
+    opacity: 0.9;
+}
+</style>
+</Head>
+<Body>
+Hello User!... <br>
+You are at JavaTpoint Site... <br>
+Following are the icons of social media
+</br>
+<ul>
+<li>
+<a href="#" class="fa fa-facebook"> </a>
+</li>
+<li>
+<a href="#" class="fa fa-twitter"> </a>
+</li>
+<li>
+<a href="#" class="fa fa-pinterest"> </a>
+</li>
+<li>
+<a href="#" class="fa fa-linkedin"> </a>
+</li>
+<li>
+<a href="#" class="fa fa-instagram"> </a>
+</li>
+<li>
+<a href="#" class="fa fa-youtube"> </a>
+</li>
+<li>
+<a href="#" class="fa fa-google"> </a>
+</li>
+<li>
+<a href="#" class="fa fa-snapchat-ghost"> </a>
+</li>
+<li>
+<a href="#" class="fa fa-skype"> </a></li></ul></Body> </Html>
+________________________________________________________________________________
+THIS IS THE BEST WAY TRY THIS......!
+<!Doctype Html>
+<Html>
+<Head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<Title>
+Add the Sticky icons of social media
+</Title>
+<style>
+/* Style the Sticky icons on web page */
+.stickyicon-list {
+position: fixed;
+top: 200px;
+transform: translateY(-50%);
+}
+.stickyicon-list a {
+display: block;
+text-align: center;
+padding: 8px;
+transition: all 0.5s ease;
+color: white;
+font-size: 20px;
+}
+/* HOver affect on sticky social media icons */
+.stickyicon-list a:hover {
+color: #000;
+width:10px;
+}
+
+/* Now we have to design each icon of social media */
+.facebook {
+background: #3b5998;
+color: white;
+}
+.twitter {
+color: white;
+background: #00acee;
+}
+.linkedin {
+background: #0e76a8;
+color: white;
+}
+.google {
+color: white;
+background: #db4a39;
+}
+.instagram {
+background: #3f729b;
+color: white;
+}
+.youtube {
+color: white;
+background: #c4302b;
+}
+</style>
+</Head>
+<Body>
+Hello User!... <br>
+You are at JavaTpoint Site... <br>
+<div class="stickyicon-list">
+<a href="#facebook" class="facebook">
+<i class="fa fa-facebook"></i>
+</a>
+<a href="#twitter" class="twitter">
+<i class="fa fa-twitter"></i>
+</a>
+<a href="#linkedin" class="linkedin">
+<i class="fa fa-linkedin"></i>
+</a>
+<a href="#google" class="google">
+<i class="fa fa-google"></i>
+</a>
+<a href="#instagram" class="instagram">
+<i class="fa fa-instagram"></i>
+</a>
+<a href="#youtube" class="youtube">
+<i class="fa fa-youtube"></i>
+</a>
+</div>
+</Body>
+</Html>
+________________________________________________________________________________
+THIS IS WRAPPING OF TEXT...........!
+<!DOCTYPE html>
+<Html>
+<Head>
+<Title>
+Wraping text around image
+</Title>
+<style>
+.wrapingimage
+{
+float: left;
+margin: 30px 12px 3px 4px;
+border: 2px solid blue;
+}
+</style>
+</head>
+<body>
+Hellooo User!!!....
+<div class="wrapingimage">
+<img src=
+"https://www.javatpoint.com/images/logo/jtp_logo.png" height="100" width="100"
+alt="image">
+</div>
+<p>
+If we want to wrap the text around an image in Html document using Internal CSS then we have to follow the steps which are given below. Using these steps we can easily wrap a text.
+Step 1: Firstly, we have to type the Html code in any text editor or open the existing Html file in the text editor in which we want to wrap the text.
+Step 2: Now, we have to type the CSS code for aligning the image. So, we have to type the style tag in the head tag just after the title tag.
+Step 3: And, then we have to define the various properties for wrapping the text around the image. So, we have to define a class.
+</p>
+</Body>
+</Html>
+________________________________________________________________________________
+THIS IS TO DOWNLOAD WORD DOCUMENT FROM THE WEBPAGE.........!
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <title>
+        Download word file using <a> tag download attribute
+    </title>
+<style>
+        h1 {
+            color: red;
+        }
+        h5 {
+            color: green;
+        }
+        h2 {
+            color: green;
+        }
+        p {
+        color: red;
+        }
+        a {
+        color: red;
+        }
+</style>
+</head>
+<body>
+<center>
+<h2> Example 6 </h2>
+<h1>download attribute used to download word file </h1>
+<h5>Click on the below text to download word file : </h5>
+<a href = "example.docx" download = "file">
+ <b> download </b>
+</a>
+<h5> word file download with name given in download attribute </h5>
+</center>
+</body>
+</html>
+________________________________________________________________________________
+THIS IS TO DOWNLOAD PDF FROM WEBPAGE.........!
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <title>
+        Download pdf file using <a> tag download attribute
+    </title>
+<style>
+        h1 {
+            color: red;
+        }
+        h5 {
+            color: green;
+        }
+        h2 {
+            color: green;
+        }
+        p {
+        color: red;
+        }
+        a {
+        color: red;
+        }
+</style>
+</head>
+<body>
+<center>
+<h2> Example 4 </h2>
+<h1>download attribute used to download pdf file </h1>
+<h5>Click on the below text to download pdf file : </h5>
+<a href = "dosfiles.pdf" download = "file">
+ <b> download </b>
+</a>
+<h5> pdf file download with given name in download attribute </h5>
+</center>
+</body>
+</html>
+________________________________________________________________________________
+THIS IS TO DOWNLOAD IMAGE IN WEBPAGE.......!
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <title>
+        Download image using <a> tag download attribute
+    </title>
+<style>
+        h1 {
+            color: green;
+        }
+        h5 {
+            color: green;
+        }
+        h2 {
+            color: green;
+        }
+        p {
+        color: red;
+        }
+</style>
+</head>
+<body>
+<center>
+<h2> Example 2 </h2>
+<h1>download attribute used to download image </h1>
+<h5>Click on the image to download it : </h5>
+<a href="logo 2.png" download ="logo">
+  <img src="logo 2.png" alt="javaTpoint" width="104" height="142">
+</a>
+<h5> image download with given name in download attribute </h5>
+</center>
+</body>
+</html>
+________________________________________________________________________________
+THIS IS TO CREATE DYNAMIC TABLE.......!
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+  table, tr, th, td
+    {
+table-layout: fixed;
+        border: 1px solid black;
+        border-collapse: separate;
+    }
+    table{
+        border-spacing: 3px;
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    }
+    th{
+        background-color: black;
+        color: white;
+    }
+    .b{
+        padding: 2px 15px;
+        border-radius: 10px;
+    }
+    .b:active{
+        transform: scale(0.98);
+    }
+    .b:hover{
+        background-color: black;
+        color: white;
+    }
+</style>
+<script>
+    function row()
+    {
+        var mytable =  document.getElementById("mytable");
+        var rows = mytable.rows.length;
+        var r = mytable.insertRow(rows);
+        var c1 = r.insertCell(0);
+        var c2 = r.insertCell(1);
+        var c3 = r.insertCell(2);
+        var checkbox = document.createElement("input");
+        var roll = document.createElement("input");
+        var name = document.createElement("input");
+        checkbox.type = "checkbox";
+        roll.type = "number";
+        name.type = "text";
+        c1.appendChild(checkbox);
+        c2.appendChild(roll);
+        c3.appendChild(name);
+    }
+    function del()
+    {
+        var mytable = document.getElementById("mytable");
+        var rows = mytable.rows.length;
+        for(var i = rows - 1; i > 0; i--)
+        {
+            if(mytable.rows[i].cells[0].children[0].checked)
+            {
+                mytable.deleteRow(i);
+            }
+        }
+    }
+</script>
+</head>
+<body>
+    <h1>Dynamic Table</h1>
+    <table id = "mytable">
+    <tr>
+      <th></th>
+      <th>Roll Number</th>
+      <th>Name</th>
+    </tr>
+    <tr>
+      <td><input type=checkbox></td>
+      <td><input></td>
+      <td><input></td>
+    </tr>
+    </table>
+    <br>
+    <input type = button class = "b" value = "Add new row" onclick = row()>
+    <input type = button class = "b" value = "Delete selected rows" onclick = del()>
+</body>
+</html>
+________________________________________________________________________________
+THIS HOW WE WANT TO CREATE A FORM......!
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <style>
+    #abt{
+            width: 400px;
+            height: 60px;
+        }
+    #add
+        {
+            width: 400px;
+            height: 40px;
+        }
+    </style>
+    <script>
+      function fun()
+        {
+            pas = document.getElementById("pwd").value;
+            cpas = document.getElementById("cpwd").value;
+            if(pas!=cpas)
+            {
+                alert("password and confirm password aren't the same");
+                return false;
+            }
+            age = document.getElementById("age").value;
+            if(age < 21 || age > 55)
+            {
+                alert("you are not eligible for this opportunity in terms of age");
+                return false;
+            }
+            country = document.getElementById("country").value;
+            if(country.toLowerCase()!="india")
+                {
+                    alert("This opportunity is only limited to India");
+                    return false;
+                }
+            ph = document.getElementById("ph").value;
+            if(ph.toString().length!=10)
+                {
+                    alert("Invalid phone number");
+                    return false;
+                }
+            return true;
+        }
+    </script>
+</head>
+<body>
+    <h1>Registration form-Internship</h1>
+    <p>You need to fill all the required information Dont leave any field blank </p>
+    <form id = "myform" action = "dynamic_table.html" onsubmit = "return fun();">
+        <table>
+            <tr><td><label>Name: </label></td><td><input type = text required></td></tr>
+            <tr><td><label>Age: </label></td><td><input id = "age" type = number required></td></tr>
+            <tr><td><label>Address: </label></td><td><textarea wrap="hard" id = "add" type = text required></textarea></td></tr>
+            <tr><td><label>Country: </label></td><td><input type = text id = "country" required></td></tr>
+            <tr><td><label>Phone Number: </label></td><td><input type = number id = "ph" required></td></tr>
+            <tr><td><label>About you (min-100 words): </label></td><td><textarea wrap = "hard" id = "abt" required></textarea></td></tr>
+            <tr><td><label>Password: </label></td><td><input type = text id = "pwd" required></td></tr>
+            <tr><td><label>Confirm Password: </label></td><td><input type = text id = "cpwd" required></td></tr>
+        </table>
+        <button type = "submit">Submit</button>
+    </form>
+</body>
+</html>
+________________________________________________________________________________
+THIS IS TO CREATE A SEARCH BAR......!
+<!Doctype Html>
+<Html>
+<Head>
+<Title>
+Make a Search Bar using Html and CSS
+</Title>
+<style>
+.searchbox {
+float: left;
+}
+input[type=text] {
+padding: 6px;
+margin-top: 8px;
+font-size: 17px;
+border: none;
+}
+.searchbox button {
+
+padding: 8px;
+margin-top: 10px;
+margin-left: 10px;
+background: orange;
+font-size: 20px;
+border: none;
+cursor: pointer;
+}
+.searchbox button:hover {
+background: blue;
+}
+</style>
+</Head>
+<Body>
+Hello User!....   <br>
+Html Tutorial   <br>
+This page helps us to understand how to make a search bar . <br>
+<div class="searchbox">
+<form>
+<input type="text" placeholder=" Search...." name="search">
+<button type="submit">Submit</button>
+</form>
+</div>
+</Body>
+</Html>
+________________________________________________________________________________
+THIS IS THE CORRECT FORM MAKING......!
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+Password hide in HTML
+</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<style>
+body {
+  background: #191828;
+  color: #efedef;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0.01em;
+  line-height: 1.6em;
+  margin: 0;
+  padding: 100px;
+  }
+
+h4 {
+  font-weight: bold;
+  margin-bottom: 2.5rem;
+ color: #3494e6;
+  align: center;
+}
+.form-wrapper {
+  background: #fff;
+  border-radius: 5px;
+  padding: 50px;
+}
+.form-control,
+.custom-select {
+  border-radius: 0px;
+  color: #495057;
+  background-color: #f1f1f1;
+  border-color: none;
+}
+
+.form-control:focus {
+  color: #495057;
+  background-color: #ffffff;
+  border: 1px solid #b5b6b3;
+  outline: 0;
+  box-shadow: none;
+}
+
+.btn {
+  background: #3494e6;
+  border: #3494e6;
+  padding: 0.6rem 3rem;
+  font-weight: bold;
+}
+.btn:hover,
+.btn:focus,
+.btn:active,
+.btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active,
+.show > .btn-primary.dropdown-toggle {
+  background: #3494e6;
+  border: #3494e6;
+  outline: 0;
+}
+button {
+    display: inline-block;
+    padding: 0.35em 1.2em;
+    border: 0.1em solid #3494e6;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 700;
+    color: #3494e6;
+    text-align: center;
+    transition: all 0.2s;
+    }
+    button:hover {
+    color: #FFFFFF;
+    background-color: #3494e6;
+    }
+</style>
+</head>
+<body>
+<section class="contact-from pt-4">
+  <div class="container">
+  <div class="row mt-5">
+      <div class="col-md-7 mx-auto">
+        <div class="form-wrapper">
+          <div class="row">
+            <div class="col-md-12">
+              <h4> <b> Example:  Password Hide in HTML </b> </h4>
+            </div>
+          </div>
+          <form _lpchecked="1">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+         <input type="text" class="form-control" placeholder="First name" required >
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Last name" required >
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+               <input type="email" class="form-control" placeholder="Email" required >
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                    <label class="form-check-label" for="inlineRadio1"> Male </label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option1">
+                    <label class="form-check-label" for="inlineRadio1"> Female </label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Phone number" required >
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input type="date" class="form-control">
+                </div>
+              </div>
+    <div class="col-md-6">
+                <div class="form-group">
+                  <input type="password" class="form-control" placeholder="Password" required >
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input type="password" class="form-control" placeholder="Confirm Password" >
+                </div>
+              </div>
+              <div class="col-md-12">
+                <select name="countries" class="custom-select" id="exampleFormControlSelect1">
+                  <option> Select country </option>
+                  <option> India </option>
+                  <option> USA </option>
+                  <option> France </option>
+                  <option> China </option>
+                  <option> Japan </option>
+                </select>
+              </div>
+
+            </div>
+            <div class="mt-3" align="center">
+              <button> Register </button>
+     </div>
+          </form>
+        </div>
+      </div>
+    </div>
+</div>
+</section>
+</body>
+</html>
+________________________________________________________________________________
+<script language="javascript" type="text/javascript">
+  funtion sub()
+  {
+    if(document.getElementById("group1.i").value=="group1.i")
+      const combobox = document.querySelector('smart-combo-box'); combobox. dataSource = ["English", "Language","Physics","Chemistry","Biology","Mathematics"];
+    if(document.getElementById("group2.i").value=="group2.i")
+      const combobox = document.querySelector('smart-combo-box'); combobox. dataSource = ["English", "Language","Physics","Chemistry","Computer Science","Mathematics"];
+    if(document.getElementById("group3.i").value=="group3.i")
+      const combobox = document.querySelector('smart-combo-box'); combobox. dataSource = ["English", "Language","Accounts","Commerce","Economics","Computer Applications"];
+    if(document.getElementById("group4.i").value=="group4.i")
+      const combobox = document.querySelector('smart-combo-box'); combobox. dataSource = ["English", "Language","Accounts","Commerce","Economics","Business Maths"];
+  }
+</script>
+________________________________________________________________________________
+JavaScript PROGRAM TO ENABLE MULTIPLE FUNCTIONS............
+var btn = document.querySelector('#submit');
+   btn.addEventListener('click',addrow);
+   btn.addEventListener('click',sub);
+   btn.addEventListener('click',open);
+   function addrow()
+   {
+      console.log("Method 2");
+   }
+   function sub()
+   {
+      console.log("Method 1");
+   }
+________________________________________________________________________________
+<?php
+    if($_POST)
+    {
+      $host="localhost";
+      $user="root";
+      $pass="";
+      $db="sboa markstatement";
+           $username=$_POST['username'];
+           $password=$_POST['password'];
+      $conn=mysqli_connect($host,$user,$pass,$db);
+      $query="SELECT * from login where username='$username' and password='$password'";
+
+      $result=mysqli_query($conn,$query);
+       if(mysqli_num_rows($result)==1)
+       {
+         session_start();
+         $_SESSION['sboa markstatement']='true';
+         header('location:sendme.php')
+       }
+       else
+        {
+          echo'wrong username or password';
+        }
+
+    }
+?>
+________________________________________________________________________________
+for creating drop down box...................
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Dropdown</a>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </li>
+</ul>
+
+<h3>Dropdown Menu inside a Navigation Bar</h3>
+<p>Hover over the "Dropdown" link to see the dropdown menu.</p>
+
+</body>
+</html>
+________________________________________________________________________________
+<script>
+ //for adding new rows in the table....
+ //in the tabel the  number of rows taken from the database is also created here
+  function row()
+  {
+    var marktable =  document.getElementById("marktable");
+    var rows = marktable.rows.length;
+    var r = marktable.insertRow(rows);
+/* var c1 will create an element & var name will make the input & the rest of the part like c1.appendChild
+name and r.append will give the names and values and types to the row */
+    var c1 = document.createElement("TD");
+    var name = document.createElement("INPUT");
+    c1.appendChild(name);
+    r.append(c1);
+    name.setAttribute('type','text');
+    name.setAttribute('size','20');
+
+    var c2 = document.createElement("TD");
+    var adno = document.createElement("INPUT");
+    c2.appendChild(adno);
+    r.append(c2);
+    adno.setAttribute('type','text');
+    adno.setAttribute('size','10');
+
+    var c3 = document.createElement("TD");
+    var rollno = document.createElement("INPUT");
+    c3.appendChild(rollno);
+    r.append(c3);
+    rollno.setAttribute('type','integer');
+    rollno.setAttribute('size','5');
+
+    var c4 = document.createElement("TD");
+    var groups = document.createElement("INPUT");
+    c4.appendChild(groups);
+    r.append(c4);
+    groups.setAttribute('type','text');
+    groups.setAttribute('size','10');
+
+    var c6 = document.createElement("TD");
+    var exam = document.createElement("INPUT");
+    c6.appendChild(exam);
+    r.append(c6);
+    exam.setAttribute('type','text');
+    exam.setAttribute('size','20');
+
+    var c7 = document.createElement("TD");
+    var eng = document.createElement("INPUT");
+    c7.appendChild(eng);
+    r.append(c7);
+    eng.setAttribute('type','integer');
+    eng.setAttribute('size','20');
+
+    var c8 = document.createElement("TD");
+    var lang = document.createElement("INPUT");
+    c8.appendChild(lang);
+    r.append(c8);
+    lang.setAttribute('type','integer');
+    lang.setAttribute('size','20');
+
+    var c9 = document.createElement("TD");
+    var phy_eco = document.createElement("INPUT");
+    c9.appendChild(phy_eco);
+    r.append(c9);
+    phy_eco.setAttribute('type','integer');
+    phy_eco.setAttribute('size','20');
+
+    var c10 = document.createElement("TD");
+    var che_acc = document.createElement("INPUT");
+    c10.appendChild(che_acc);
+    r.append(c10);
+    che_acc.setAttribute('type','integer');
+    che_acc.setAttribute('size','20');
+
+    var c11 = document.createElement("TD");
+    var mat_com = document.createElement("INPUT");
+    c11.appendChild(mat_com);
+    r.append(c11);
+    mat_com.setAttribute('type','integer');
+    mat_com.setAttribute('size','20');
+
+    var c12 = document.createElement("TD");
+    var bio_cs_ca_bm = document.createElement("INPUT");
+    c12.appendChild(bio_cs_ca_bm);
+    r.append(c12);
+    bio_cs_ca_bm.setAttribute('type','int');
+    bio_cs_ca_bm.setAttribute('size','20');
+
+    var c17 = document.createElement("TD");
+    var total = document.createElement("INPUT");
+    c17.appendChild(total);
+    r.append(c17);
+    total.setAttribute('type','int');
+    total.setAttribute('size','20');
+
+    var c18 = document.createElement("TD");
+    var avg = document.createElement("INPUT");
+    c18.appendChild(avg);
+    r.append(c18);
+    avg.setAttribute('type','text');
+    avg.setAttribute('size','20');
+    //this will increase the
+    for(var i = rows + 1; i < 1; i++)
+    {
+        if(marktable.rows[i].cells[1].checked)
+        {
+            marktable.addRow(i);
+        }
+    }
+  }
+  //after pressing submit button the below function must takes place to open action.php
+</script>
+________________________________________________________________________________
+//this is for adding drop down box which in header.....
+<header>
+<ul>
+  <li><a href="#">Home</a></li>
+  <li><a href="#">About Us</a></li>
+  <li class="dropdown">
+    <a href="#" class="dropbtn">Management</a>
+    <div class="dropdown-content">
+      <a href="#">Secretary & Correspondent</a>
+      <a href="#">Resident Correspondent</a>
+      <a href="#">Office Bearers</a>
+      <a href="#">Admin</a>
+    </div>
+  </li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn"> Students Marklist</a>
+    <div class="dropdown-content">
+      <a href="cls&sec1.html">Marklist 1st-10th</a>
+      <a href="cls&sec.html">Marklist 11th & 12th</a>
+    </div>
+  </li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Students Marks Data Entry</a>
+    <div class="dropdown-content">
+      <a href="send.html">Entry For 1st-10th</a>
+      <a href="sendme.html">Entry For 11th & 12th</a>
+    </div>
+  </li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Students Data Entry</a>
+    <div class="dropdown-content">
+      <a href="enroll1.html">Entry For 1st-10th</a>
+      <a href="enroll.html">Entry For 11th & 12th</a>
+    </div>
+  </li>
+  <li><a href="https://sboacbe.com/">Contact Us Here</a></li>
+</ul>
+</header>
+________________________________________________________________________________
+//use this link for UMRAH SERVICE PROJECT
+https://stackoverflow.com/questions/53808392/copy-textbox-value-to-another-textbox-inside-dynamic-table
+________________________________________________________________________________

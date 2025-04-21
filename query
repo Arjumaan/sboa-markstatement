@@ -1,0 +1,56 @@
+// to retrieve from database in ascending order//
+
+SELECT * FROM Products
+ORDER BY ROLLNO ASC;
+________________________________________________________________________________
+//update new type *edited* (destination = update.php) //
+
+UPDATE marklist SET ,ENG = '', LANG = '', PHY_ECO = '', CHE_ACC = '', MAT_COM = '', BIO_CS_CA_BM = '', TOTAL = '', AVERAGE = '' WHERE ADNO = '', ROLLNO = '', CLASS = '', SECTION = '', GROUPS = '', LANGUAGE = '', EXAMINATION = '';
+________________________________________________________________________________
+//to select and change the students details  (destination = update.php) //
+
+SELECT ADNO, ROLLNO, CLASS, SECTION, GROUPS, LANGUAGE, EXAMINATION, ENG, LANG, PHY_ECO, CHE_ACC, MAT_COM, BIO_CS_CA_BM, TOTAL, AVERAGE FROM marklist WHERE CLASS = '$studclass' AND SECTION = '$studsec' AND EXAMINATION = '$studexam' ";
+________________________________________________________________________________
+// marktable select section for display and enter null  (destination = marktable.php)  //
+
+SELECT student.NAME, student.ADNO, student.CLASS, student.SECTION, student.ROLLNO, student.GROUPS, student.LANGUAGE, marklist.EXAMINATION, ";
+        $q .= "ENG, LANG, PHY_ECO, CHE_ACC, ";
+        $q .= " MAT_COM, BIO_CS_CA_BM, TOTAL, AVERAGE FROM student LEFT JOIN marklist ON ";
+        $q .= "student.ROLLNO = marklist.ROLLNO AND marklist.EXAMINATION = '$studexam' ";
+        $q .= "WHERE student.CLASS = '$studclass' AND student.SECTION = '$studsec'";
+________________________________________________________________________________
+// to select with count and display  (destination = insert.php) //
+
+SELECT COUNT(*) AS count FROM marklist WHERE EXAMINATION = '$studexam' AND CLASS = '$studclass' AND SECTION = '$studsec'";
+________________________________________________________________________________
+// to insert the data and show in table (destination = insert.php) //
+
+$insert_query = "INSERT INTO marklist (ADNO, ROLLNO, CLASS, SECTION, GROUPS, LANGUAGE, EXAMINATION, ENG, LANG, PHY_ECO, CHE_ACC, MAT_COM, BIO_CS_CA_BM, TOTAL, AVERAGE)";
+$insert_query .= "SELECT ADNO, ROLLNO, '$studclass', '$studsec', GROUPS, LANGUAGE, '$studexam', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL FROM student ";
+$insert_query .= "WHERE CLASS = '$studclass' AND SECTION = '$studsec'";
+________________________________________________________________________________
+________________________________________________________________________________
+
+//Database Query AND Table creation Query DESTINATION(localhost/phpmyadmin/)//
+________________________________________________________________________________
+________________________________________________________________________________
+
+CREATE DATABASE `sboa markstatement`;
+
+USE DATABASE `sboa markstatement`;
+
+CREATE TABLE IF NOT EXISTS `login` (`Username` varchar(25) CHARACTER SET utf8 NOT NULL DEFAULT '', Email varchar(25) CHARACTER SET utf8 NOT NULL DEFAULT '', Password varchar(25) CHARACTER SET utf8 NOT NULL DEFAULT '') ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+CREATE TABLE IF NOT EXISTS `student` (`NAME` varchar(25) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT 'none', `ADNO` varchar(10) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT 'none', `CLASS` int(5) NOT NULL, `SECTION` varchar(1) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT 'none', `ROLLNO` int(5) NOT NULL DEFAULT '11101', `GROUPS` varchar(10) CHARACTER SET utf8 NOT NULL DEFAULT 'BIO-MATHS', `LANGUAGE` varchar(1) CHARACTER SET utf8 NOT NULL DEFAULT 'T') ENGINE=InnoDB DEFAULT CHARSET=latin1;
+CREATE TABLE IF NOT EXISTS `student2` (`NAME` varchar(25) CHARACTER SET utf8 NOT NULL DEFAULT '', `ADNO` varchar(10) CHARACTER SET utf8 NOT NULL DEFAULT '0000/00', `CLASS` int(5) NOT NULL DEFAULT '1', `SECTION` varchar(1) CHARACTER SET utf8 NOT NULL DEFAULT 'A', `ROLLNO` int(5) NOT NULL DEFAULT '1101') ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+ALTER TABLE `student` ADD PRIMARY KEY(`ADNO`);
+ALTER TABLE `student` ADD UNIQUE(`ROLLNO`);
+
+ALTER TABLE `student2` ADD PRIMARY KEY(`ADNO`);
+ALTER TABLE `student2` ADD UNIQUE(`ROLLNO`);
+
+CREATE TABLE IF NOT EXISTS `marklist` (`ADNO` varchar(10) CHARACTER SET utf8 NOT NULL DEFAULT '0000/00', `ROLLNO` int(5) NOT NULL DEFAULT '0', `CLASS` int(5) NOT NULL DEFAULT '0', `SECTION` varchar(1) CHARACTER SET utf8 NOT NULL DEFAULT 'A', `GROUPS` varchar(10) CHARACTER SET utf8 NOT NULL DEFAULT 'BIO-MATHS', `LANGUAGE` varchar(1) CHARACTER SET utf8 NOT NULL DEFAULT 'T', `EXAMINATION` varchar(25) CHARACTER SET utf8 NOT NULL DEFAULT '', `ENG` int(5) NOT NULL DEFAULT '0', `LANG` int(5) NOT NULL DEFAULT '0', `PHY_ECO` int(5) NOT NULL, `CHE_ACC` int(5) NOT NULL DEFAULT '0', `MAT_COM` int(5) NOT NULL DEFAULT '0', `BIO_CS_CA_BM` int(5) NOT NULL DEFAULT '0', `TOTAL` int(10) NOT NULL DEFAULT '0', `AVERAGE` varchar(10) CHARACTER SET utf8 NOT NULL DEFAULT '') ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+CREATE TABLE IF NOT EXISTS `marklist2` (`ADNO` varchar(10) CHARACTER SET utf8 NOT NULL DEFAULT '0000/00', `ROLLNO` int(5) NOT NULL DEFAULT '0', `CLASS` int(5) NOT NULL DEFAULT '0', `SECTION` varchar(1) CHARACTER SET utf8 NOT NULL DEFAULT 'A', `EXAMINATION` varchar(25) CHARACTER SET utf8 NOT NULL DEFAULT '', `ENG` int(5) NOT NULL DEFAULT '0', `TAM` int(5) NOT NULL DEFAULT '0', `MAT` int(5) NOT NULL DEFAULT '0', `SCI` int(5) NOT NULL DEFAULT '0', `SOC_SCI` int(5) NOT NULL DEFAULT '0', `TOTAL` int(10) NOT NULL DEFAULT '0', `AVERAGE` varchar(10) CHARACTER SET utf8 NOT NULL DEFAULT '100%') ENGINE=InnoDB DEFAULT CHARSET=latin1;
+________________________________________________________________________________
